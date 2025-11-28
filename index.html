@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Escola Sunnydale - Educação com Propósito</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      background-color: #f4f8fb;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #1E90FF;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 5px;
+    }
+
+    h2:nth-of-type(1) {
+      color: #2E8B57;
+    }
+
+    h2#upcoming-events {
+      color: #D2691E;
+      background-color: #FFF8DC;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    h2:nth-of-type(3) {
+      color: #4682B4;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding: 8px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .outdoor {
+      background-color: #E0F7FA;
+      border: 1px solid #B2EBF2;
+    }
+
+    span {
+      font-weight: bold;
+      color: #C62828;
+    }
+
+    .section {
+      background-color: #fefefe;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      margin-top: 10px;
+    }
+
+    a {
+      color: #1E90FF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Bem-vindo à Escola Sunnydale</h1>
+
+    <h2>Declaração de Missão</h2>
+    <p>Promover uma educação inclusiva, criativa e voltada para o desenvolvimento integral dos alunos.</p>
+
+    <h2 id="upcoming-events">Próximos Eventos</h2>
+    <ul>
+      <li title="Event Type: Indoor" data-event-type="indoor">
+        Feira de Ciências - <span>10 de Junho</span>
+      </li>
+      <li class="outdoor" title="Event Type: Outdoor" data-event-type="outdoor">
+        Exposição de Arte - <span>15 de Junho</span>
+      </li>
+      <li class="outdoor" title="Event Type: Outdoor" data-event-type="outdoor">
+        Dia de Esportes - <span>20 de Junho</span>
+      </li>
+    </ul>
+
+    <h2>Fale Conosco</h2>
+    <div class="section">
+      <p>
+        Email: <a href="mailto:contato@sunnydale.edu.br" title="Clique para copiar o e-mail">contato@sunnydale.edu.br</a><br>
+        Telefone: <a href="tel:+551532165432" title="Clique para copiar o número">+55 (15) 3216-5432</a>
+      </p>
+      <!-- Imagine que clicar aqui exibe a mensagem: 'Obrigado por entrar em contato!' -->
+    </div>
+  </div>
+
+</body>
+</html>
